@@ -124,6 +124,7 @@ public class PageFetcher extends Configurable {
         clientBuilder.setConnectionManager(connectionManager);
         clientBuilder.setUserAgent(config.getUserAgentString());
         clientBuilder.setDefaultHeaders(config.getDefaultHeaders());
+        clientBuilder.setDefaultCookieStore(config.getDefaultCookieStore());
 
         if (config.getProxyHost() != null) {
             if (config.getProxyUsername() != null) {
